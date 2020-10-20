@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemonada&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #855E42;
+}
+
+.main-header{
+    background-color: rgba(0, 0, 0, 0.226);
+    height: 500px;
+    width: 100vw;
+    background-image: linear-gradient(to bottom, white, black),
+    url(images-index/header-bg.jpg);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: right;
+}
+
+.main-title-area{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    .main-title{
+        color: white;
+        font-family: Lemonada;
+        font-weight: lighter;
+        margin: 0 0 0 1em;
+    }
+
+.nav-text{
+    color: rgb(255, 245, 223);
+    font-size: 1.3em;
+}
+
+.nav{
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.281);
+    border-bottom: 1px solid black;
+    position: fixed;
+    width: 100%;
+}
+    .nav a{
+        text-decoration: none;
+        text-align: center;
+        margin: 3%;
+    }
+        .nav a:hover{
+            background-color: rgba(0, 0, 0, 0.336);
+        }
