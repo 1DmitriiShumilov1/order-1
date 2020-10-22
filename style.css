@@ -16,6 +16,10 @@ body{
     background-image: linear-gradient(to bottom, rgb(80, 80, 80), rgb(26, 26, 26));
 }
 
+.no-underline{
+    text-decoration: none;
+}
+
 .main-header{
     background-color: rgba(0, 0, 0, 0.226);
     height: 500px;
@@ -179,6 +183,7 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
+        min-height: 92px;
     }
         .info-name-1{
             animation: switchColor1Back .3s;
