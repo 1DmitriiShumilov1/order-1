@@ -155,7 +155,7 @@ body{
             }
             .instrument-title{
                 font-weight: normal;
-                text-shadow: 0px 5px 5px rgb(0, 0, 0);
+                text-shadow: 0px 3px 5px rgb(0, 0, 0);
             }
             .instrument-description{
                 width: 40%;
@@ -181,31 +181,33 @@ body{
         align-items: center;
     }
         .info-name-1{
-            animation: switchColor1Back .5s;
+            animation: switchColor1Back .3s;
             border-right: 2px solid black;
             border-bottom: 2px solid black;
             border-bottom-right-radius: 5px;
             box-shadow: 5px 5px 10px black;
             font-size: 1.5em;
+            color: white;
         }
             .info-name-1:hover{
-                animation: switchColor1 .5s;
+                animation: switchColor1 .3s;
                 animation-fill-mode: both;
             }
         .info-name-2{
-            animation: switchColor2Back .5s;
+            animation: switchColor2Back .3s;
             border-left: 2px solid black;
             border-bottom: 2px solid black;
             border-bottom-left-radius: 5px;
             box-shadow: -5px 5px 10px black;
             font-size: 1.5em;
+            color: white;
         }
             .info-name-2:hover{
-                animation: switchColor2 .5s;
+                animation: switchColor2 .3s;
                 animation-fill-mode: both;
             }
         .info-1{
-            animation: switchColor3Back .5s;
+            animation: switchColor3Back .3s;
             border-right: 2px solid black;
             border-top: 2px solid black;
             border-top-right-radius: 5px;
@@ -213,11 +215,11 @@ body{
             font-size: 1.2em;
         }
             .info-1:hover{
-                animation: switchColor3 .5s;
+                animation: switchColor3 .3s;
                 animation-fill-mode: both;
             }
         .info-2{
-            animation: switchColor4Back .5s;
+            animation: switchColor4Back .3s;
             border-left: 2px solid black;
             border-top: 2px solid black;
             border-top-left-radius: 5px;
@@ -225,7 +227,7 @@ body{
             font-size: 1.2em;
         }
             .info-2:hover{
-                animation: switchColor4 .5s;
+                animation: switchColor4 .3s;
                 animation-fill-mode: both;
             }
 
@@ -313,6 +315,7 @@ body{
         width: 96%;
         height: fit-content;
         margin: 40px auto;
+        text-align: center;
     }
     .creator{
         font-size: .8em;
