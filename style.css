@@ -1,8 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Lemonada&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 *{
     box-sizing: border-box;
     font-family: Roboto;
+    color: rgb(209, 209, 209);
 }
 
 html, body{
@@ -11,20 +13,20 @@ html, body{
 }
 
 body{
-    background-color: #855E42;
+    background-image: linear-gradient(to bottom, rgb(80, 80, 80), rgb(26, 26, 26));
 }
 
 .main-header{
     background-color: rgba(0, 0, 0, 0.226);
     height: 500px;
-    width: 100vw;
-    background-image: linear-gradient(to bottom, white, black),
+    width: 100%;
+    background-image: linear-gradient(to top, white, rgba(0, 0, 0, 0.7)),
     url(images-index/header-bg.jpg);
     background-blend-mode: multiply;
     background-size: cover;
-    background-position: right;
+    background-position: 60% 70%;
+    box-shadow: 0px 40px 40px rgb(8, 8, 8);
 }
-
 .main-title-area{
     height: 500px;
     display: flex;
@@ -33,23 +35,27 @@ body{
 }
     .main-title{
         color: white;
-        font-family: Lemonada;
+        font-family: Caveat;
         font-weight: lighter;
-        margin: 0 0 0 1em;
+        font-size: 3em;
+        font-style: italic;
     }
 
 .nav-text{
     color: rgb(255, 245, 223);
     font-size: 1.3em;
 }
+    .nav-text:hover{
+        animation: pop-up .5s;
+    }
 
 .nav{
     height: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.281);
-    border-bottom: 1px solid black;
+    background-color: rgba(0, 0, 0, 0.623);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.329);
     position: fixed;
     width: 100%;
 }
@@ -58,6 +64,256 @@ body{
         text-align: center;
         margin: 3%;
     }
-        .nav a:hover{
-            background-color: rgba(0, 0, 0, 0.336);
+
+@keyframes pop-up {
+    0%{
+        color: rgb(255, 245, 223);
+    }
+
+    50%{
+        color: rgb(0, 0, 0);
+    }
+    100%{
+        color: rgb(255, 245, 223);
+    }
+}
+
+/*-------------------------*/
+
+.intro{
+    display: flex;
+    margin: 200px auto auto auto;
+    align-items: center;
+}
+    .intro-picture{
+        width: 495px;
+        height: 600px;
+        margin: 40px 40px 40px 100px;
+        border-radius: 10px;
+        border: 1px solid white;
+        box-shadow: 0px 0px 7px rgb(255, 204, 62);
+    }
+    .intro-paragraph{
+        width: 50%;
+        margin: 0px auto;
+        font-size: 1.5em;
+    }
+
+.big-divider{
+    width: 85%;
+    height: 5px;
+    border-radius: 50%;
+    background-color: rgb(255, 136, 0);
+    margin: 200px auto;
+    border: 1px solid rgb(94, 94, 94);
+    box-shadow: 0px 8px 15px 5px rgb(255, 192, 109);
+}
+
+.mini-header{
+    text-align: center;
+    font-size: 2.3em;
+    font-weight: normal;
+    font-family: Caveat;
+    color: rgb(255, 255, 255);
+}
+    .instruments-container{
+        display: flex;
+        height: fit-content;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 90%;
+        margin: 0 auto;
+    }
+        .divider{
+            width: 80%;
+            height: 2px;
+            border-radius: 1px;
+            background-color: rgb(82, 82, 82);
+            margin: 60px auto;
+            box-shadow: 0px 5px 10px rgb(0, 0, 0);
         }
+        .instrument-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 10px;
+            font-size: 1.2em;
+        }
+            .border-right{
+                border-right: 1px solid rgba(255, 255, 255, 0.3);
+                border-left: 1px double rgba(255, 255, 255, 0.1);
+            }
+            .border-left{
+                border-left: 1px solid rgba(255, 255, 255, 0.3);
+                border-right: 1px double rgba(255, 255, 255, 0.1);
+            }
+            .instrument{
+                width: 400px;
+                height: 472.6px;
+                border: 1px solid rgba(255, 255, 255, 0.596);
+                border-radius: 5px;
+            }
+            .instrument-title{
+                font-weight: normal;
+                text-shadow: 0px 5px 5px rgb(0, 0, 0);
+            }
+            .instrument-description{
+                width: 40%;
+                text-align: center;
+            }
+.margin-top{
+    margin-top: 200px;
+}
+
+.contact-info{
+    margin: 20px auto;
+    width: 80%;
+    height: 200px;
+    display:grid;
+    grid-template-columns: 49% 49%;
+    grid-row: 1 2 1;
+    grid-column-gap: 2%;
+    grid-row-gap: 8%;
+}
+    .cell{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+        .info-name-1{
+            animation: switchColor1Back .5s;
+            border-right: 2px solid black;
+            border-bottom: 2px solid black;
+            border-bottom-right-radius: 5px;
+            box-shadow: 5px 5px 10px black;
+            font-size: 1.5em;
+        }
+            .info-name-1:hover{
+                animation: switchColor1 .5s;
+                animation-fill-mode: both;
+            }
+        .info-name-2{
+            animation: switchColor2Back .5s;
+            border-left: 2px solid black;
+            border-bottom: 2px solid black;
+            border-bottom-left-radius: 5px;
+            box-shadow: -5px 5px 10px black;
+            font-size: 1.5em;
+        }
+            .info-name-2:hover{
+                animation: switchColor2 .5s;
+                animation-fill-mode: both;
+            }
+        .info-1{
+            animation: switchColor3Back .5s;
+            border-right: 2px solid black;
+            border-top: 2px solid black;
+            border-top-right-radius: 5px;
+            box-shadow: 5px -5px 10px black;
+            font-size: 1.2em;
+        }
+            .info-1:hover{
+                animation: switchColor3 .5s;
+                animation-fill-mode: both;
+            }
+        .info-2{
+            animation: switchColor4Back .5s;
+            border-left: 2px solid black;
+            border-top: 2px solid black;
+            border-top-left-radius: 5px;
+            box-shadow: -5px -5px 10px black;
+            font-size: 1.2em;
+        }
+            .info-2:hover{
+                animation: switchColor4 .5s;
+                animation-fill-mode: both;
+            }
+
+/*-----------------------------------------------------------*/
+@keyframes switchColor1 {
+    0%{
+        box-shadow: 5px 5px 10px black;
+    }
+    100%{
+        box-shadow: 12px 12px 10px rgb(255, 146, 43);
+    }
+}
+
+@keyframes switchColor1Back {
+    0%{
+        box-shadow: 12px 12px 10px rgb(255, 146, 43);
+    }
+    100%{
+        box-shadow: 5px 5px 10px black;
+    }
+}
+
+@keyframes switchColor2 {
+    0%{
+        box-shadow: -5px 5px 10px black;
+    }
+    100%{
+        box-shadow: -12px 12px 10px rgb(255, 146, 43);
+    }
+}
+
+@keyframes switchColor2Back {
+    0%{
+        box-shadow: -12px 12px 10px rgb(255, 146, 43);
+    }
+    100%{
+        box-shadow: -5px 5px 10px black;
+    }
+}
+
+@keyframes switchColor3 {
+    0%{
+        box-shadow: 5px -5px 10px black;
+    }
+    100%{
+        box-shadow: 12px -12px 10px rgb(255, 146, 43);
+    }
+}
+
+@keyframes switchColor3Back {
+    0%{
+        box-shadow: 12px -12px 10px rgb(255, 146, 43);
+    }
+    100%{
+        box-shadow: 5px -5px 10px black;
+    }
+}
+
+@keyframes switchColor4 {
+    0%{
+        box-shadow: -5px -5px 10px black;
+    }
+    100%{
+        box-shadow: -12px -12px 10px rgb(255, 146, 43);
+    }
+}
+
+@keyframes switchColor4Back {
+    0%{
+        box-shadow: -12px -12px 10px rgb(255, 146, 43);
+    }
+    100%{
+        box-shadow: -5px -5px 10px black;
+    }
+}
+/*-----------------------------------------------------------*/
+
+.main-footer{
+    width: 100%;
+    height: fit-content;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+}
+    .footer-container{
+        width: 96%;
+        height: fit-content;
+        margin: 40px auto;
+    }
+    .creator{
+        font-size: .8em;
+    }
