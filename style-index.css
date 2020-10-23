@@ -280,7 +280,7 @@ body{
         transition-duration: 500ms;
         margin: 20px auto;
         width: 48%;
-        height: fit-content;
+        height: auto;
     }
     .intro-paragraph{
         text-align: center;
