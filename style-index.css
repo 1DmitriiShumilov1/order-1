@@ -96,11 +96,18 @@ body{
         border-radius: 10px;
         border: 1px solid white;
         box-shadow: 0px 0px 7px rgb(255, 204, 62);
+        transition-duration: 300ms;
     }
+        .intro-picture:hover{
+            box-shadow: 0px 0px 15px rgb(255, 204, 62);
+        }
     .intro-paragraph{
         width: 50%;
         margin: 0px auto;
         font-size: 1.5em;
+        border-bottom:1px solid grey;
+        border-top:1px solid grey;
+        padding: 20px 0;
     }
 
 .big-divider{
@@ -184,6 +191,7 @@ body{
         justify-content: center;
         align-items: center;
         min-height: 92px;
+        background-color: rgb(49, 49, 49);
     }
         .info-name-1{
             animation: switchColor1Back .3s;
