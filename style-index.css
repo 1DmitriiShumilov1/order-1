@@ -331,4 +331,11 @@ body{
         .cell:hover{
             box-shadow: 0px 15px 10px -8px rgb(255, 146, 43);
         }
+}
+
+@media screen and (max-width: 350px){
+    .main-title{
+        transition-duration: 500ms;
+        font-size: 2em;
+    }
 } 
