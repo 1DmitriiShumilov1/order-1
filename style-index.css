@@ -316,7 +316,7 @@ body{
     .instrument{
         transition-duration: 500ms;
         width: 90%;
-        height: fit-content;
+        height: auto;
     }
     .contact-info{
         grid-template-columns: none;
