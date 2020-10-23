@@ -86,13 +86,13 @@ body{
 
 .intro{
     display: flex;
-    margin: 200px auto auto auto;
+    margin: 100px auto auto auto;
     align-items: center;
 }
     .intro-picture{
         width: 495px;
         height: 600px;
-        margin: 40px 40px 40px 100px;
+        margin: 40px 0px 40px 100px;
         border-radius: 10px;
         border: 1px solid white;
         box-shadow: 0px 0px 7px rgb(255, 204, 62);
@@ -102,7 +102,7 @@ body{
             box-shadow: 0px 0px 15px rgb(255, 204, 62);
         }
     .intro-paragraph{
-        width: 50%;
+        max-width: 50%;
         margin: 0px auto;
         font-size: 1.5em;
         border-bottom:1px solid grey;
@@ -114,9 +114,8 @@ body{
     width: 85%;
     height: 5px;
     border-radius: 50%;
-    background-color: rgb(255, 136, 0);
-    margin: 200px auto;
-    border: 1px solid rgb(94, 94, 94);
+    background-image: linear-gradient(to bottom, rgb(255, 175, 83), rgb(255, 136, 0));
+    margin: 100px auto;
     box-shadow: 0px 8px 15px 5px rgb(255, 192, 109);
 }
 
@@ -194,7 +193,7 @@ body{
         background-color: rgb(49, 49, 49);
     }
         .info-name-1{
-            animation: switchColor1Back .3s;
+            transition-duration: 300ms;
             border-right: 2px solid black;
             border-bottom: 2px solid black;
             border-bottom-right-radius: 5px;
@@ -203,11 +202,10 @@ body{
             color: white;
         }
             .info-name-1:hover{
-                animation: switchColor1 .3s;
-                animation-fill-mode: both;
+                box-shadow: 12px 12px 10px rgb(255, 146, 43);
             }
         .info-name-2{
-            animation: switchColor2Back .3s;
+            transition-duration: 300ms;
             border-left: 2px solid black;
             border-bottom: 2px solid black;
             border-bottom-left-radius: 5px;
@@ -216,11 +214,10 @@ body{
             color: white;
         }
             .info-name-2:hover{
-                animation: switchColor2 .3s;
-                animation-fill-mode: both;
+                box-shadow: -12px 12px 10px rgb(255, 146, 43);
             }
         .info-1{
-            animation: switchColor3Back .3s;
+            transition-duration: 300ms;
             border-right: 2px solid black;
             border-top: 2px solid black;
             border-top-right-radius: 5px;
@@ -228,11 +225,10 @@ body{
             font-size: 1.2em;
         }
             .info-1:hover{
-                animation: switchColor3 .3s;
-                animation-fill-mode: both;
+                box-shadow: 12px -12px 10px rgb(255, 146, 43);
             }
         .info-2{
-            animation: switchColor4Back .3s;
+            transition-duration: 300ms;
             border-left: 2px solid black;
             border-top: 2px solid black;
             border-top-left-radius: 5px;
@@ -240,83 +236,10 @@ body{
             font-size: 1.2em;
         }
             .info-2:hover{
-                animation: switchColor4 .3s;
-                animation-fill-mode: both;
+                box-shadow: -12px -12px 10px rgb(255, 146, 43);
             }
 
-/*-----------------------------------------------------------*/
-@keyframes switchColor1 {
-    0%{
-        box-shadow: 5px 5px 10px black;
-    }
-    100%{
-        box-shadow: 12px 12px 10px rgb(255, 146, 43);
-    }
-}
-
-@keyframes switchColor1Back {
-    0%{
-        box-shadow: 12px 12px 10px rgb(255, 146, 43);
-    }
-    100%{
-        box-shadow: 5px 5px 10px black;
-    }
-}
-
-@keyframes switchColor2 {
-    0%{
-        box-shadow: -5px 5px 10px black;
-    }
-    100%{
-        box-shadow: -12px 12px 10px rgb(255, 146, 43);
-    }
-}
-
-@keyframes switchColor2Back {
-    0%{
-        box-shadow: -12px 12px 10px rgb(255, 146, 43);
-    }
-    100%{
-        box-shadow: -5px 5px 10px black;
-    }
-}
-
-@keyframes switchColor3 {
-    0%{
-        box-shadow: 5px -5px 10px black;
-    }
-    100%{
-        box-shadow: 12px -12px 10px rgb(255, 146, 43);
-    }
-}
-
-@keyframes switchColor3Back {
-    0%{
-        box-shadow: 12px -12px 10px rgb(255, 146, 43);
-    }
-    100%{
-        box-shadow: 5px -5px 10px black;
-    }
-}
-
-@keyframes switchColor4 {
-    0%{
-        box-shadow: -5px -5px 10px black;
-    }
-    100%{
-        box-shadow: -12px -12px 10px rgb(255, 146, 43);
-    }
-}
-
-@keyframes switchColor4Back {
-    0%{
-        box-shadow: -12px -12px 10px rgb(255, 146, 43);
-    }
-    100%{
-        box-shadow: -5px -5px 10px black;
-    }
-}
-/*-----------------------------------------------------------*/
+/*-------------------------*/
 
 .main-footer{
     width: 100%;
@@ -333,3 +256,45 @@ body{
     .creator{
         font-size: .8em;
     }
+
+/*-----------small-screen-support-------------*/
+@media screen and (max-width: 1500px){
+    .intro-picture{
+        transition-duration: 500ms;
+        width: 330px;
+        height: 400px;
+    }
+    .intro-paragraph{
+        transition-duration: 500ms;
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .intro{
+        transition-duration: 500ms;
+        flex-direction: column;
+    }
+    .intro-picture{
+        transition-duration: 500ms;
+        margin: 20px auto;
+        width: 48%;
+        height: fit-content;
+    }
+    .intro-paragraph{
+        text-align: center;
+        max-width: 70%;
+    }
+
+    .instrument-description{
+        width: 70%;
+    }
+} 
+
+@media screen and (max-width: 500px){
+    .instrument{
+        transition-duration: 500ms;
+        width: 90%;
+        height: fit-content;
+    }
+} 
