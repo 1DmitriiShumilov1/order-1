@@ -189,20 +189,26 @@ body{
 .album-1{
     padding: 20px;
 }
-.album-cover{
-    animation: remove-glide-n-shade .3s;
-    max-width: 400px;
-}
-.album-cover:active{
-    animation: glide-n-shade .3s;
-    animation-fill-mode: both;
-}
-
-.album-name{
-    text-align: center;
-    color: white;
-    font-size: 1.5em;
-}
+    .album-cover{
+        animation: remove-glide-n-shade .3s;
+        max-width: 400px;
+    }
+    .album-cover:active{
+        animation: glide-n-shade .3s;
+        animation-fill-mode: both;
+    }
+    .album-name{
+        text-align: center;
+        color: white;
+        font-size: 1.5em;
+    }
+    .price{
+        text-align: center;
+    }
+    .hint{
+        font-size: .8em;
+        margin: 0;
+    }
 
 @keyframes glide-n-shade{
     0%{
