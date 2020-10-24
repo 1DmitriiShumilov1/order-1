@@ -115,13 +115,15 @@ body{
 }
 .videos-youtube{
     margin-bottom: 20px;
-    width: 90%;
+    min-width: 90%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
     .video{
+        width: 560px;
+        height: 315px;
         margin: 1%;
         border: 1px solid white;
         box-shadow: 0px 0px 5px white;
@@ -227,3 +229,52 @@ body{
     .creator{
         font-size: .8em;
     }
+
+/*-------------------*/
+@media screen and (max-width: 700px){
+    .videos-youtube{
+        width: 100%;
+    }
+    .video{
+        transition-duration: 500ms;
+        width: 373.33px;
+        height: 210px;
+    }
+}
+
+@media screen and (max-width: 440px){
+    .mini-header{
+        transition-duration: 500ms;
+        font-size: 1.5em;
+    }
+
+    .btn-youtube{
+        width: 70vw;
+    }
+
+    .album-cover{
+        transition-duration: 500ms;
+        width: 100%;
+        margin: auto;
+    }
+
+    .main-title{
+        transition-duration: 500ms;
+        font-size: 2em;
+    }
+}
+
+@media screen and (max-width: 300px){
+    .video{
+        transition-duration: 500ms;
+        width: 213.33px;
+        height: 120px;
+    }
+}
+
+@media screen and (max-width: 270px){
+    .video{
+        width: 90%;
+        margin: 1% auto;
+    }
+}
