@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 *{
     box-sizing: border-box;
@@ -45,11 +46,11 @@ body{
     align-items: center;
 }
     .main-title{
-        color: white;
         font-family: Caveat;
+        color: white;
         font-weight: lighter;
         font-size: 3em;
-        font-style: italic;
+        letter-spacing: 2px;
     }
 
 .nav-text{

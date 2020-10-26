@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 *{
     box-sizing: border-box;
@@ -45,11 +46,11 @@ body{
     align-items: center;
 }
     .main-title{
-        color: white;
         font-family: Caveat;
+        color: white;
         font-weight: lighter;
         font-size: 3em;
-        font-style: italic;
+        letter-spacing: 2px;
     }
 
 .nav-text{
@@ -98,7 +99,7 @@ body{
     .intro-paragraph{
         max-width: 50%;
         margin: 0px auto;
-        font-size: 1.5em;
+        font-size: 1.3em;
         border-bottom:1px solid grey;
         border-top:1px solid grey;
         padding: 20px 0;
@@ -131,9 +132,9 @@ body{
 
 .mini-header{
     text-align: center;
-    font-size: 2.3em;
+    font-size: 2em;
     font-weight: normal;
-    font-family: Caveat;
+    font-family: Montserrat;
     color: rgb(255, 255, 255);
 }
     .instruments-container{
