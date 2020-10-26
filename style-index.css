@@ -14,7 +14,8 @@ html, body{
 }
 
 body{
-    background-image: linear-gradient(to bottom, rgb(54, 54, 54), rgb(8, 8, 8));
+    min-height: 95vh;
+    background-image: linear-gradient(to bottom, rgb(54, 54, 54), rgb(18, 18, 18));
 }
 
 .no-underline{
@@ -52,11 +53,12 @@ body{
     }
 
 .nav-text{
+    transition-duration: 500ms;
     color: rgb(255, 245, 223);
     font-size: 1.3em;
 }
     .nav-text:hover{
-        animation: pop-up .5s;
+        color: rgba(255, 245, 223, 0.295);
     }
 
 .nav{
@@ -74,20 +76,6 @@ body{
         text-align: center;
         margin: 3%;
     }
-
-@keyframes pop-up {
-    0%{
-        color: rgb(255, 245, 223);
-    }
-
-    50%{
-        color: rgb(0, 0, 0);
-    }
-    100%{
-        color: rgb(255, 245, 223);
-    }
-}
-
 /*-------------------------*/
 
 .intro{
