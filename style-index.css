@@ -328,6 +328,10 @@ body{
 } 
 
 @media screen and (max-width: 500px){
+    .nav-text{
+        font-size: 1em;
+    }
+
     .instrument{
         transition-duration: 500ms;
         width: 90%;
@@ -352,5 +356,19 @@ body{
     .main-title{
         transition-duration: 500ms;
         font-size: 2em;
+    }
+}
+
+
+@media screen and (max-width: 440px){
+    .main-title{
+        transition-duration: 500ms;
+        font-size: 2em;
+    }
+}
+
+@media screen and (max-width: 340px){
+    .nav-text{
+        font-size: .8em;
     }
 } 

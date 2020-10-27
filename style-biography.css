@@ -91,7 +91,7 @@ body{
     .bio-picture-old{
         transition-duration: 300ms;
         float: left;
-        max-width: 23%;
+        width: 23%;
         box-shadow: 0px 0px 5px orange;
         border: 1px solid orange;
     }
@@ -101,11 +101,21 @@ body{
     .bio-picture-new{
         transition-duration: 300ms;
         float: right;
-        max-width: 35%;
+        width: 35%;
         box-shadow: 0px 0px 5px rgb(255, 255, 255);
         border: 1px solid rgb(255, 255, 255);
     }
         .bio-picture-new:hover{
+            box-shadow: 0px 0px 20px rgb(255, 255, 255);
+        }
+    .bio-picture-phone-support{
+        transition-duration: 300ms;
+        width: 100%;
+        box-shadow: 0px 0px 5px rgb(255, 255, 255);
+        border: 1px solid rgb(255, 255, 255);
+        display: none;
+    }
+        .bio-picture-phone-support:hover{
             box-shadow: 0px 0px 20px rgb(255, 255, 255);
         }
 
@@ -126,3 +136,46 @@ body{
     .creator{
         font-size: .8em;
     }
+
+/*-----------all-screen-support-------------*/
+@media screen and (max-width: 1300px){
+    .bio-picture-old{
+        width: 40%;
+    }
+    .bio-picture-new{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .biography{
+        width: 90%;
+        margin: 40px auto;
+        font-size: 1em;
+    }
+    .bio-picture-old{
+        width: 50%;
+        margin: 20px;
+    }
+    .bio-picture-new{
+        display: none;
+    }
+    .bio-picture-phone-support{
+        display: initial;
+        width: 100%;
+        margin: 0px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .nav-text{
+        font-size: 1em;
+    }
+} 
+
+
+@media screen and (max-width: 340px){
+    .nav-text{
+        font-size: .8em;
+    }
+} 

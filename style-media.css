@@ -233,6 +233,12 @@ body{
     }
 }
 
+@media screen and (max-width: 500px){
+    .nav-text{
+        font-size: 1em;
+    }
+} 
+
 @media screen and (max-width: 440px){
     .mini-header{
         transition-duration: 500ms;
@@ -254,6 +260,12 @@ body{
         font-size: 2em;
     }
 }
+
+@media screen and (max-width: 340px){
+    .nav-text{
+        font-size: .8em;
+    }
+} 
 
 @media screen and (max-width: 300px){
     .video{

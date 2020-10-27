@@ -102,3 +102,17 @@ body{
     .creator{
         font-size: .8em;
     }
+
+/*-----------all-screen-support-------------*/
+
+@media screen and (max-width: 500px){
+    .nav-text{
+        font-size: 1em;
+    }
+} 
+
+@media screen and (max-width: 340px){
+    .nav-text{
+        font-size: .8em;
+    }
+} 
