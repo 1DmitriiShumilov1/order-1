@@ -80,10 +80,103 @@ body{
 
 /**/
 
-.delete-later{
+.mini-header{
     text-align: center;
-    margin: 100px auto;
+    font-size: 2em;
+    font-weight: normal;
+    font-family: Montserrat;
+    color: rgb(255, 255, 255);
 }
+
+.reg-contacts{
+    margin: 40px auto;
+}
+.contact-info{
+    margin: 20px auto;
+    width: 80%;
+    height: 200px;
+    display:grid;
+    grid-template-columns: 49% 49%;
+    grid-row: 1 2 1;
+    grid-column-gap: 2%;
+    grid-row-gap: 8%;
+}
+    .cell{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 92px;
+        background-color: rgb(49, 49, 49);
+    }
+        .info-name-1{
+            transition-duration: 300ms;
+            border-right: 2px solid black;
+            border-bottom: 2px solid black;
+            border-bottom-right-radius: 5px;
+            box-shadow: 5px 5px 10px black;
+            font-size: 1.5em;
+            color: white;
+        }
+            .info-name-1:hover{
+                box-shadow: 8px 8px 10px rgb(255, 146, 43);
+            }
+        .info-name-2{
+            transition-duration: 300ms;
+            border-left: 2px solid black;
+            border-bottom: 2px solid black;
+            border-bottom-left-radius: 5px;
+            box-shadow: -5px 5px 10px black;
+            font-size: 1.5em;
+            color: white;
+        }
+            .info-name-2:hover{
+                box-shadow: -8px 8px 10px rgb(255, 146, 43);
+            }
+        .info-1{
+            transition-duration: 300ms;
+            border-right: 2px solid black;
+            border-top: 2px solid black;
+            border-top-right-radius: 5px;
+            box-shadow: 5px -5px 10px black;
+            font-size: 1.2em;
+        }
+            .info-1:hover{
+                box-shadow: 8px -8px 10px rgb(255, 146, 43);
+            }
+        .info-2{
+            transition-duration: 300ms;
+            border-left: 2px solid black;
+            border-top: 2px solid black;
+            border-top-left-radius: 5px;
+            box-shadow: -5px -5px 10px black;
+            font-size: 1.2em;
+        }
+            .info-2:hover{
+                box-shadow: -8px -8px 10px rgb(255, 146, 43);
+            }
+.social-media{
+    margin: 20px auto;
+    width: 70%;
+}
+.social-media-template{
+    width: 32%;
+    margin: .5% auto;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    .facebook{
+        background-color: #2d88ff;
+    }
+    .youtube{
+        background-color: white;
+    }
+
+.icon{
+    width: 60px;
+}
+
 
 /**/
 
