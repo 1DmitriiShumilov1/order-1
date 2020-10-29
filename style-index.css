@@ -105,6 +105,11 @@ body{
         padding: 20px 0;
     }
 
+.piano-music{
+    display: block;
+    margin: 0 auto;
+}
+
 .big-divider{
     width: 85%;
     height: 5px;
