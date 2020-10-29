@@ -155,23 +155,33 @@ body{
                 box-shadow: -8px -8px 10px rgb(255, 146, 43);
             }
 .social-media{
-    margin: 20px auto;
+    margin: 20px auto 50px auto;
     width: 70%;
+    display: flex;
 }
 .social-media-template{
-    width: 32%;
-    margin: .5% auto;
+    width: 50%;
+    margin: 0 .5%;
     height: 180px;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: grey;
 }
     .facebook{
+        transition-duration: 300ms;
         background-color: #2d88ff;
     }
+        .facebook:hover{
+            box-shadow: 0px 0px 10px #2d88ff;
+        }
     .youtube{
+        transition-duration: 300ms;
         background-color: white;
     }
+        .youtube:hover{
+            box-shadow: 0px 0px 10px white;
+        }
 
 .icon{
     width: 60px;
