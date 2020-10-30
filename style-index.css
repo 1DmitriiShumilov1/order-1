@@ -105,9 +105,11 @@ body{
         padding: 20px 0;
     }
 
-.piano-music{
+.music{
+    transition-duration: 300ms;
     display: block;
     margin: 0 auto;
+    font-size: .1em;
 }
 
 .big-divider{
@@ -362,13 +364,8 @@ body{
         transition-duration: 500ms;
         font-size: 2em;
     }
-}
-
-
-@media screen and (max-width: 440px){
-    .main-title{
-        transition-duration: 500ms;
-        font-size: 2em;
+    .music{
+        width: 80%;
     }
 }
 
