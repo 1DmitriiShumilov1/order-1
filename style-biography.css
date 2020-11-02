@@ -178,4 +178,11 @@ body{
     .nav-text{
         font-size: .8em;
     }
-} 
+}
+
+@media screen and (max-width: 300px){
+    .main-title{
+        transition-duration: 500ms;
+        font-size: 1.5em;
+    }
+}
