@@ -207,7 +207,7 @@ body{
                 transition: transform 0.8s;
                 transform-style: preserve-3d;
             }
-            .flip-card:hover .flip-card-inner {
+            .flip-card:active .flip-card-inner {
                 transform: rotateY(180deg);
             }
             .flip-card-front, .flip-card-back {
@@ -265,12 +265,12 @@ body{
         height: 210px;
     }
     .flip-card {
-        width: 400px;
-        height: 400px;
+        width: 350px;
+        height: 350px;
         perspective: 1000px;
     }
     .album-cover{
-        max-width: 400px;
+        max-width: 350px;
     }
 }
 
@@ -293,7 +293,7 @@ body{
 
     .album-cover{
         transition-duration: 500ms;
-        width: 300px;
+        width: 250px;
         margin: auto;
     }
 
@@ -303,12 +303,9 @@ body{
     }
 
     .flip-card {
-        width: 300px;
-        height: 300px;
+        width: 250px;
+        height: 250px;
         perspective: 1000px;
-    }
-    .album-cover{
-        max-width: 300px;
     }
 }
 
@@ -318,12 +315,12 @@ body{
     }
 
     .flip-card {
-        width: 300px;
-        height: 300px;
+        width: 200px;
+        height: 200px;
         perspective: 1000px;
     }
     .album-cover{
-        max-width: 300px;
+        max-width: 200px;
     }
 } 
 
@@ -340,12 +337,12 @@ body{
     }
 
     .flip-card {
-        width: 250px;
-        height: 250px;
+        width: 150px;
+        height: 150px;
         perspective: 1000px;
     }
     .album-cover{
-        max-width: 250px;
+        max-width: 150px;
     }
 }
 
