@@ -218,7 +218,6 @@ body{
                 backface-visibility: hidden;
             }
             .flip-card-front {
-                background-color: rgb(110, 51, 51);
                 color: black;
             }
             .flip-card-back {

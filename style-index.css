@@ -108,7 +108,7 @@ body{
 .music{
     transition-duration: 300ms;
     display: block;
-    margin: 0 auto;
+    margin: 20px auto;
     font-size: .1em;
 }
 
