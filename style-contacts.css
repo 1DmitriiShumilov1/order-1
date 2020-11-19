@@ -115,10 +115,8 @@ body{
             box-shadow: 5px 5px 10px black;
             font-size: 1.5em;
             color: white;
+            text-decoration: underline;
         }
-            .info-name-1:hover{
-                box-shadow: 8px 8px 10px #2d88ff;
-            }
         .info-name-2{
             transition-duration: 300ms;
             border-left: 2px solid black;
@@ -127,10 +125,8 @@ body{
             box-shadow: -5px 5px 10px black;
             font-size: 1.5em;
             color: white;
+            text-decoration: underline;
         }
-            .info-name-2:hover{
-                box-shadow: -8px 8px 10px white;
-            }
         .info-1{
             transition-duration: 300ms;
             border-right: 2px solid black;
