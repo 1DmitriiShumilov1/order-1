@@ -54,7 +54,7 @@ body{
     }
 
 .nav-text{
-    transition-duration: 500ms;
+    transition-duration: 300ms;
     color: rgb(255, 245, 223);
     font-size: 1.3em;
 }
