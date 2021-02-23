@@ -65,6 +65,7 @@ body{
     border-bottom: 1px solid rgba(255, 255, 255, 0.329);
     position: fixed;
     width: 100%;
+    z-index: 2;
 }
     .nav a{
         text-decoration: none;
@@ -230,11 +231,14 @@ body{
                 transition-timing-function: cubic-bezier(0.22, 0.61, 0.34, 0.98);
             }
             .album-name{
+                padding-top: 2%;
                 width: 100%;
                 text-align: center;
                 color: white;
                 font-size: 1.5em;
+                text-decoration: underline;
             }
+
 
 /*----------------------------------------*/
 
