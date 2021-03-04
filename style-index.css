@@ -53,15 +53,6 @@ body{
         letter-spacing: 2px;
     }
 
-.nav-text{
-    transition-duration: 300ms;
-    color: rgb(255, 245, 223);
-    font-size: 1.3em;
-}
-    .nav-text:hover{
-        color: rgba(255, 245, 223, 0.295);
-    }
-
 .nav{
     height: 40px;
     display: flex;
@@ -71,12 +62,22 @@ body{
     border-bottom: 1px solid rgba(255, 255, 255, 0.329);
     position: fixed;
     width: 100%;
+    z-index: 2;
 }
     .nav a{
         text-decoration: none;
         text-align: center;
         margin: 3%;
     }
+    .main-link{
+        width: 100%;
+        transition-duration: 300ms;
+        color: rgb(255, 245, 223);
+        font-size: 1.3em;
+    }
+        .main-link:hover{
+            color: rgba(255, 245, 223, 0.295);
+        }
 /*-------------------------*/
 
 .intro{
@@ -89,13 +90,10 @@ body{
         height: 600px;
         margin: 40px 0px 40px 100px;
         border-radius: 10px;
-        border: 1px solid white;
-        box-shadow: 0px 0px 7px rgb(255, 204, 62);
         transition-duration: 300ms;
+        border: 1px solid white;
+        box-shadow: 0 0 1px 0px white inset, 0 0 1px 0px white;
     }
-        .intro-picture:hover{
-            box-shadow: 0px 0px 15px rgb(255, 204, 62);
-        }
     .intro-paragraph{
         max-width: 50%;
         margin: 0px auto;
@@ -116,10 +114,16 @@ body{
     width: 85%;
     height: 5px;
     border-radius: 50%;
-    background-image: linear-gradient(to bottom, rgb(255, 175, 83), rgb(255, 136, 0));
     margin: 100px auto;
-    box-shadow: 0px 8px 15px 5px rgb(255, 192, 109);
 }
+    .light-down{
+        box-shadow: 0px 8px 15px 5px rgb(255, 192, 109);
+        background-image: linear-gradient(to bottom, rgb(255, 175, 83), rgb(255, 136, 0));
+    }
+    .light-up{
+        box-shadow: 0px -8px 15px 5px rgb(255, 192, 109);
+        background-image: linear-gradient(to bottom,  rgb(255, 136, 0), rgb(255, 175, 83));
+    }
 
 .list{
     width: 70%;
@@ -166,15 +170,9 @@ body{
             align-items: center;
             margin: 10px;
             font-size: 1.2em;
+            border-right: 1px solid rgba(255, 255, 255, 0.1);
+            border-left: 1px solid rgba(255, 255, 255, 0.1);
         }
-            .border-right{
-                border-right: 1px solid rgba(255, 255, 255, 0.3);
-                border-left: 1px double rgba(255, 255, 255, 0.1);
-            }
-            .border-left{
-                border-left: 1px solid rgba(255, 255, 255, 0.3);
-                border-right: 1px double rgba(255, 255, 255, 0.1);
-            }
             .instrument{
                 width: 400px;
                 height: 472.6px;
